@@ -1,247 +1,521 @@
-# Cloud Security Envisioning & Strategy
+<div align="center">
 
-## Self-Paced Course Overview
+# ☁️🔐 Cloud Security Envisioning & Strategy Workshop
 
-**Course format:** Web-accessible self-paced course  
-**Recommended duration:** 1 day guided equivalent, or 4–6 hours self-paced core learning plus optional Microsoft Learn extension activities  
-**Level:** Intermediate  
-**Audience:** Cloud administrators, security analysts, cloud architects, infrastructure engineers, SOC teams, technical managers, compliance stakeholders, and Microsoft security practitioners  
-**Primary technologies:** Microsoft Defender for Cloud, Microsoft Defender XDR, Microsoft Security Exposure Management, Microsoft Entra ID, Azure workloads, Defender workload protection plans
+### CESE323 ERC1.0 · Microsoft Defender for Cloud · Microsoft Entra · Microsoft Purview · Secure AI Workloads
 
----
+<p>
+  <a href="https://learn.microsoft.com/en-us/collections/qrx3iqtkpwee6g?source=docs&sharingId=6319874F856A7FF8">
+    <img alt="Microsoft Learn Collection" src="https://img.shields.io/badge/Microsoft%20Learn-Collection-258FFA?style=for-the-badge&logo=microsoft&logoColor=white">
+  </a>
+  <a href="https://learn.microsoft.com/en-us/azure/defender-for-cloud/">
+    <img alt="Microsoft Defender for Cloud" src="https://img.shields.io/badge/Defender%20for%20Cloud-Workload%20Protection-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white">
+  </a>
+  <a href="https://learn.microsoft.com/en-us/training/courses/sc-5009">
+    <img alt="Secure AI Course" src="https://img.shields.io/badge/Secure%20AI-SC--5009-742774?style=for-the-badge&logo=microsoft&logoColor=white">
+  </a>
+  <a href="#license">
+    <img alt="License" src="https://img.shields.io/badge/license-TBD-lightgrey?style=for-the-badge">
+  </a>
+</p>
 
-## Course Purpose
+<p>
+  <img alt="Audience" src="https://img.shields.io/badge/Audience-Security%20Engineers%20%7C%20Architects%20%7C%20Cloud%20Ops-0F6CBD?style=flat-square">
+  <img alt="Delivery" src="https://img.shields.io/badge/Delivery-One--Day%20ILT%20%2B%20Self--Paced-107C10?style=flat-square">
+  <img alt="Level" src="https://img.shields.io/badge/Level-Intermediate%20to%20Advanced-FFB900?style=flat-square">
+  <img alt="Status" src="https://img.shields.io/badge/Status-Courseware%20Development%20Ready-2EA043?style=flat-square">
+</p>
 
-Cloud environments expand quickly, but visibility, governance, identity control, and workload protection often lag behind business adoption. This course helps learners move from general cloud security awareness to a practical Microsoft cloud security strategy using Defender for Cloud and the broader Microsoft security stack.
+> A practical Microsoft cloud security workshop that moves learners from **strategy and governance** into **Microsoft Defender for Cloud configuration**, **Cloud Security Posture Management**, **workload protection**, **AI workload security**, and **live environment remediation**.
 
-The course is designed as the self-paced companion to the instructor-led **Cloud Security Envisioning & Strategy Workshop**. It compresses strategic guidance, architecture explanation, configuration walkthroughs, workload protection decision-making, and operational readiness into a structured web-based learning path.
-
----
-
-## What Learners Will Be Able to Do
-
-By the end of this course, learners should be able to:
-
-1. Define cloud security priorities aligned to organizational risk, compliance requirements, and operational maturity.
-2. Explain how Microsoft Defender for Cloud, Microsoft Defender XDR, Microsoft Entra ID, Microsoft Sentinel, Microsoft Purview, and Security Exposure Management contribute to a unified security operating model.
-3. Identify cloud security posture risks such as misconfigurations, over-privileged identities, weak policy coverage, and exposed workloads.
-4. Use Defender for Cloud concepts to assess recommendations, secure score, regulatory compliance, and attack paths.
-5. Compare workload protection options for Storage, Containers, App Service, and AI Services.
-6. Understand AI workload security concerns, including shared responsibility, prompt injection, sensitive data leakage, and monitoring requirements.
-7. Build a practical remediation roadmap that prioritizes risk reduction and operational readiness.
-8. Translate workshop outputs into a 30-day cloud security improvement plan.
-
----
-
-## Course Structure
-
-| Module | Title | Focus |
-|---|---|---|
-| 0 | Course Orientation | How to use the course, GitHub pages, labs, and Microsoft Learn references |
-| 1 | Cloud Security Strategy & Governance | Goals, risk priorities, compliance alignment, and security operating model |
-| 2 | Microsoft Cloud Security Architecture | Microsoft Defender portal, Defender XDR, Defender for Cloud, Entra ID, Sentinel, Purview, and Security Exposure Management |
-| 3 | Cloud Security Posture Management | Secure score, recommendations, regulatory compliance, misconfigurations, privileged identities, and attack paths |
-| 4 | Configuration Control & Defender for Cloud | Defender plans, policy assignment, environment onboarding, governance guardrails, and operational friction points |
-| 5 | Workload Protection Decision Matrix | Defender for Storage, Containers, App Service, and AI Services |
-| 6 | Practical Implementation Scenarios | Guided walkthroughs, remediation planning, and simulated security incident scenarios |
-| 7 | AI Security & Data Protection | AI shared responsibility, GenAI workload security, prompt injection, and data leakage controls |
-| 8 | Capstone: 30-Day Remediation Roadmap | Prioritized action plan, ownership model, quick wins, and next steps |
+</div>
 
 ---
 
-## Recommended Learning Path
+## 📌 Table of Contents
 
-### Core Track
-
-Complete Modules 0–8 in order. This gives learners the equivalent of the compressed one-day workshop experience.
-
-### Technical Deep-Dive Track
-
-After Module 5, select at least two workload protection paths:
-
-- Defender for Storage
-- Defender for Containers
-- Defender for App Service
-- Defender for AI Services
-
-### Post-Course Extension
-
-Use the Microsoft Learn collection as supporting reference material for deeper study, knowledge checks, and optional completion tracking.
-
----
-
-## Practical Activities
-
-Learners will complete short activities throughout the course:
-
-- Cloud security goals worksheet
-- Risk and compliance priority map
-- Microsoft security stack mapping exercise
-- Defender for Cloud posture review checklist
-- Workload protection selection matrix
-- AI security risk review
-- Attack path and remediation planning exercise
-- 30-day security roadmap
+- [Course Snapshot](#-course-snapshot)
+- [Workshop Purpose](#-workshop-purpose)
+- [Learning Outcomes](#-learning-outcomes)
+- [Delivery Formats](#-delivery-formats)
+- [One-Day Instructor-Led Agenda](#-one-day-instructor-led-agenda)
+- [Self-Paced Learning Path](#-self-paced-learning-path)
+- [Microsoft Learn Alignment](#-microsoft-learn-alignment)
+- [Architecture & Learning Flow](#-architecture--learning-flow)
+- [Repository Structure](#-repository-structure)
+- [Courseware Production Checklist](#-courseware-production-checklist)
+- [Labs & Practical Scenarios](#-labs--practical-scenarios)
+- [Assessment Strategy](#-assessment-strategy)
+- [Facilitator Guidance](#-facilitator-guidance)
+- [Learner Prerequisites](#-learner-prerequisites)
+- [Quick Start](#-quick-start)
+- [Contributing](#-contributing)
+- [Source References](#-source-references)
+- [License](#-license)
 
 ---
 
-## Assessment Approach
+## 🧭 Course Snapshot
 
-This self-paced version should include lightweight validation rather than a high-pressure exam:
-
-| Assessment Type | Purpose |
+| Field | Details |
 |---|---|
-| Knowledge checks | Reinforce key concepts after each module |
-| Scenario questions | Test application of concepts to real cloud environments |
-| Configuration checklists | Validate readiness for practical deployment |
-| Capstone roadmap | Demonstrate the learner’s ability to prioritize and operationalize security actions |
-
-Suggested pass target: **75%** across knowledge checks and scenario activities.
-
----
-
-## Suggested Repository Experience
-
-The course should be published as a GitHub Pages learning site with:
-
-- A clean homepage
-- Module pages
-- Lab and activity pages
-- Downloadable worksheets
-- Microsoft Learn reference links
-- Capstone submission template
-- Optional quiz pages
-- Clear navigation for self-paced learners
+| **Course Code** | `CESE323 ERC1.0` |
+| **Course Title** | Cloud Security Envisioning & Strategy Workshop |
+| **Primary Stack** | Microsoft Defender for Cloud, Microsoft Defender XDR, Microsoft Entra, Microsoft Purview, Microsoft Foundry, Azure |
+| **Delivery Model** | One-day instructor-led workshop + GitHub-hosted self-paced course |
+| **Primary Audience** | Cloud security engineers, security architects, SecOps analysts, platform engineers, AI workload owners, IT decision makers |
+| **Level** | Intermediate to Advanced, with optional SC-900 foundation bridge |
+| **Core Outcome** | Convert cloud security strategy into actionable posture management, workload protection, identity hardening, and remediation activities |
+| **Repository Purpose** | Host courseware, labs, slides, instructor guides, learner guides, assessments, and GitHub Pages self-paced content |
 
 ---
 
-## Outcome
+## 🎯 Workshop Purpose
 
-Learners complete the course with a practical understanding of Microsoft cloud security strategy, posture management, workload protection, AI security risks, and remediation planning. The final output is not just knowledge; it is a structured cloud security improvement plan that can be applied to a real Azure environment.
-"""
+This repository supports a one-day security envisioning workshop and an expandable self-paced learning experience focused on practical Microsoft cloud security implementation.
 
-readme = """# Cloud Security Envisioning & Strategy
+The course is designed to help teams:
 
-A web-accessible, self-paced Microsoft cloud security course designed to help learners understand, assess, and improve cloud security posture using Microsoft Defender for Cloud and the broader Microsoft security ecosystem.
-
-This repository is the self-paced companion to the instructor-led **Cloud Security Envisioning & Strategy Workshop**.
-
----
-
-## Course Summary
-
-Cloud security is no longer only about enabling alerts or deploying a single security product. Modern cloud security requires strategy, governance, posture management, workload protection, identity risk reduction, data protection, AI security awareness, and operational readiness.
-
-This course guides learners through a structured security journey:
-
-1. Align business and technical security priorities.
-2. Understand Microsoft’s unified cloud security architecture.
-3. Assess cloud security posture and exposure.
-4. Identify misconfigurations, over-privileged identities, and attack paths.
-5. Select the right Microsoft Defender workload protection plans.
-6. Review AI, container, application, and data-layer security concerns.
-7. Build a practical remediation roadmap.
+- Align business security goals with measurable cloud security controls.
+- Establish unified visibility across Microsoft security portals and cloud workloads.
+- Reduce risk from misconfiguration, over-privileged identities, exposed attack paths, and weak workload protection.
+- Harden critical workloads such as **AI services**, **containers**, **storage**, **App Service**, and data platforms.
+- Move from conceptual strategy into hands-on configuration inside a controlled or customer-owned Azure environment.
 
 ---
 
-## Target Audience
+## ✅ Learning Outcomes
 
-This course is suitable for:
+By the end of the course, learners should be able to:
 
-- Cloud administrators
-- Security analysts
-- SOC analysts
-- Infrastructure engineers
-- Cloud architects
-- DevOps and platform engineering teams
-- Technical managers
-- Compliance and governance stakeholders
-- Microsoft security learners and partners
-
----
-
-## Learning Outcomes
-
-After completing this course, learners should be able to:
-
-- Define cloud security goals based on business risk and organizational priorities.
-- Explain how Microsoft Defender for Cloud, Defender XDR, Microsoft Entra ID, Microsoft Sentinel, Microsoft Purview, and Security Exposure Management work together.
-- Identify common posture weaknesses in Azure environments.
-- Interpret secure score, recommendations, regulatory compliance findings, and attack paths.
-- Compare Defender workload protection options for Storage, Containers, App Service, and AI Services.
-- Understand AI security risks such as prompt injection, sensitive data leakage, and shared responsibility boundaries.
-- Create a prioritized 30-day cloud security remediation roadmap.
+| Capability Area | Learner Can... |
+|---|---|
+| **Security Strategy** | Define cloud security goals, map risks to business priorities, and identify governance gaps. |
+| **Cloud Posture Management** | Use Microsoft Defender for Cloud to review secure score, recommendations, regulatory compliance, asset inventory, and exposure paths. |
+| **Threat Reduction** | Identify misconfigurations, over-privileged identities, high-risk resources, and attack paths. |
+| **Workload Protection** | Select and configure appropriate Microsoft Defender workload protection plans. |
+| **AI Security** | Understand AI workload risk, prompt injection exposure, data leakage risk, guardrails, and identity control requirements. |
+| **Identity Security** | Apply Microsoft Entra concepts such as RBAC, managed identities, Conditional Access, workload identities, and identity governance. |
+| **Operational Readiness** | Translate recommendations into remediation tasks, policy assignments, and operational runbooks. |
+| **Live Review** | Evaluate a cloud environment and produce practical next-step recommendations. |
 
 ---
 
-## Recommended Duration
+## 🧑‍🏫 Delivery Formats
 
-| Learning Mode | Estimated Time |
-|---|---:|
-| Core self-paced course | 4–6 hours |
-| Extended self-study with Microsoft Learn references | 1–2 days |
-| Instructor-led workshop equivalent | 1 day |
-| Full technical implementation follow-up | 2–4 weeks |
+| Format | Use Case | Recommended Duration | Output |
+|---|---:|---:|---|
+| **Instructor-Led Workshop** | Executive + technical cloud security envisioning | 1 day | Security strategy, posture review, prioritized remediation plan |
+| **Self-Paced GitHub Course** | Learners complete modules asynchronously | 4–8 hours | Completion evidence, quizzes, lab notes, knowledge checks |
+| **Blended Cohort** | Pre-work on GitHub, live lab day, post-work remediation | 1–2 weeks | Evidence-backed implementation plan |
+| **Client Readiness Sprint** | Customer-specific Microsoft Defender for Cloud activation and review | 1–3 days | Defender readiness checklist, implementation blockers, remediation backlog |
 
 ---
 
-## Course Modules
+## 🗓 One-Day Instructor-Led Agenda
 
-| Module | Title | Description |
+> The original workshop syllabus compresses strategic security planning, Defender for Cloud posture work, workload protection selection, AI security, and live environment review into a single day. This agenda keeps that intent while making the timing practical for delivery.
+
+| Timebox | Segment | Focus | Learner Output |
+|---:|---|---|---|
+| **90 min** | **Part 1 — Strategic Initiation & Governance** | Goals, priorities, risk vectors, Microsoft security stack overview, gap analysis | Draft security goals and priority risk list |
+| **10 min** | Morning Break | Reset | — |
+| **120 min** | **Part 2 — Configuration Control & Workload Protection** | Microsoft Defender portal, XDR view, CSPM, Security Exposure Management, workload protection options | Defender capability map and workload protection selection |
+| **45 min** | Lunch Break | — | — |
+| **75 min** | **Part 3 — Practical Implementation & Remediation** | Configure selected Defender components, AI-specific security, deployment blockers | Remediation checklist and policy assignment notes |
+| **10 min** | Afternoon Break | Reset | — |
+| **75 min** | **Part 4 — Hands-on Scenarios & Live Environment Review** | Incident-style scenarios, threat mapping, Defender for Cloud activation/review | Live environment observations and next-step recommendations |
+
+### Workload Protection Selection
+
+Select **two** workload protection modules for the live workshop, based on the customer environment:
+
+| Option | Best For | Workshop Angle |
 |---|---|---|
-| 00 | Course Orientation | Course structure, prerequisites, navigation, and how to use the repository |
-| 01 | Cloud Security Strategy & Governance | Security goals, risk prioritization, compliance alignment, and governance model |
-| 02 | Microsoft Cloud Security Architecture | Microsoft security stack, Defender portal, Defender XDR, Defender for Cloud, Entra ID, Sentinel, Purview, and exposure management |
-| 03 | Cloud Security Posture Management | Secure score, recommendations, compliance, misconfigurations, privileged identities, and attack paths |
-| 04 | Defender for Cloud Configuration Control | Defender plans, policy assignment, environment onboarding, and operational readiness |
-| 05 | Workload Protection Decision Matrix | Selecting the right Defender protection plans for Storage, Containers, App Service, and AI workloads |
-| 06 | Defender for Storage | Data-layer protection, malware scanning, suspicious access, and storage exposure scenarios |
-| 07 | Defender for Containers | AKS and Kubernetes hardening, image risk, runtime protection, and container security operations |
-| 08 | Defender for App Service | Cloud-native app protection, runtime monitoring, and application exposure reduction |
-| 09 | Defender for AI Services | GenAI workload protection, prompt injection risk, data leakage, and AI security monitoring |
-| 10 | Hands-On Scenarios | Simulated incidents, attack path mapping, and remediation planning |
-| 11 | Capstone Roadmap | Build a 30-day cloud security improvement plan |
+| **Defender for Storage** | Data layer protection, malware upload risk, suspicious access patterns | Secure storage accounts and data ingress points |
+| **Defender for Containers** | AKS, Kubernetes workloads, container registries | Harden containerized workloads and cluster posture |
+| **Defender for App Service** | Cloud-native apps and runtime services | Review app runtime exposure and platform security |
+| **Defender for AI Services** | Azure AI Services, Microsoft Foundry, GenAI workloads | Monitor AI security posture, detect AI threats, reduce data leakage risk |
 
 ---
 
-## Suggested Repository Structure
+## 🧩 Self-Paced Learning Path
+
+The self-paced version should run as a GitHub Pages course site backed by Markdown content, embedded diagrams, downloadable labs, and Microsoft Learn links.
+
+### Recommended Route
+
+| Phase | Module | Outcome |
+|---:|---|---|
+| **0** | Orientation & Environment Readiness | Learner understands repo structure, prerequisites, Azure access, and lab expectations. |
+| **1** | Security, Compliance & Identity Foundation | Learner reviews shared responsibility, Zero Trust, defense in depth, encryption, GRC, and identity fundamentals. |
+| **2** | Microsoft Entra for Cloud Security | Learner understands identity types, authentication, RBAC, Conditional Access, access reviews, PIM, and governance. |
+| **3** | Microsoft Defender for Cloud Strategy | Learner maps Defender for Cloud to CSPM, CWPP, secure score, recommendations, asset inventory, and regulatory compliance. |
+| **4** | Workload Protection Deep Dive | Learner evaluates Defender plans for servers, storage, SQL, open-source databases, Key Vault, Resource Manager, DNS, containers, and App Service. |
+| **5** | AI Workload Security | Learner secures AI workloads using Defender for Cloud, Microsoft Foundry controls, guardrails, and Entra-based identity boundaries. |
+| **6** | Live Review & Remediation | Learner completes a practical review, records evidence, and produces prioritized actions. |
+
+---
+
+## 🔗 Microsoft Learn Alignment
+
+This course intentionally references Microsoft Learn resources rather than duplicating Microsoft content. Use the links below as the canonical study and reference sources.
+
+| Course Area | Microsoft Learn Resource | Why It Matters |
+|---|---|---|
+| **Primary Collection** | [Cloud Security Envisioning & Strategy Workshop Collection](https://learn.microsoft.com/en-us/collections/qrx3iqtkpwee6g?source=docs&sharingId=6319874F856A7FF8) | Curated collection for this workshop. |
+| **SCI Foundation** | [Course SC-900T00-A: Introduction to Microsoft Security, Compliance, and Identity](https://learn.microsoft.com/en-us/training/courses/sc-900t00) | Foundation bridge for learners new to Microsoft security concepts. |
+| **Security Concepts** | [Introduction to security, compliance, and identity concepts](https://learn.microsoft.com/en-us/training/paths/describe-concepts-of-security-compliance-identity/) | Shared responsibility, Zero Trust, defense in depth, encryption, GRC. |
+| **Microsoft Entra** | [Introduction to Microsoft Entra](https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-identity-access/) | Identity, authentication, Conditional Access, RBAC, governance. |
+| **Microsoft Security Solutions** | [Introduction to Microsoft security solutions](https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-security-solutions/) | Defender XDR, Sentinel, Defender for Cloud, Security Copilot overview. |
+| **Microsoft Purview** | [Introduction to Microsoft Purview and Microsoft privacy principles](https://learn.microsoft.com/en-us/training/paths/describe-capabilities-of-microsoft-compliance-solutions/) | Compliance, information protection, insider risk, audit, eDiscovery, governance. |
+| **Defender for Cloud** | [Microsoft Defender for Cloud documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/) | Product reference for posture management and workload protection. |
+| **CSPM** | [Cloud Security Posture Management in Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-cloud-security-posture-management) | Secure score, recommendations, compliance, risk prioritization. |
+| **Workload Protections** | [Review workload protection](https://learn.microsoft.com/en-us/azure/defender-for-cloud/workload-protections-dashboard) | Defender workload protection dashboard and protected resource visibility. |
+| **Workload Protection Module** | [Explain cloud workload protections in Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/training/modules/understand-azure-defender-cloud-workload-protection/) | Workload protection concepts and service coverage. |
+| **Secure AI** | [Course SC-5009-A: Secure AI solutions in the cloud using Microsoft Defender for Cloud and Microsoft Entra](https://learn.microsoft.com/en-us/training/courses/sc-5009) | AI workload security, Microsoft Foundry, Defender for Cloud, identity boundaries. |
+| **SC-100 Architecture** | [Design solutions that align with security best practices and priorities](https://learn.microsoft.com/en-us/training/paths/sc-100-design-solutions-best-practices-priorities/) | Zero Trust, CAF, WAF, MCRA, MCSB, ransomware resilience, secure AI adoption. |
+
+---
+
+## 🏗 Architecture & Learning Flow
+
+```mermaid
+flowchart LR
+    A["Strategic Initiation<br/>Goals · Risk · Governance"] --> B["Unified Visibility<br/>Defender Portal · XDR · Asset Inventory"]
+    B --> C["CSPM<br/>Secure Score · Recommendations · Compliance"]
+    C --> D["Exposure Reduction<br/>Attack Paths · Over-Privileged Identities · Misconfigurations"]
+    D --> E["Workload Protection<br/>Storage · Containers · App Service · AI Services"]
+    E --> F["Practical Remediation<br/>Policies · Plans · Blockers · Assignments"]
+    F --> G["Live Environment Review<br/>Operational Examples · Tailored Next Steps"]
+
+    C --> H["Microsoft Security Exposure Management"]
+    E --> I["Microsoft Defender for Cloud"]
+    E --> J["Microsoft Entra"]
+    E --> K["Microsoft Purview"]
+    E --> L["Microsoft Foundry"]
+```
+
+### Course Design Pattern
+
+```mermaid
+flowchart TB
+    S["Source Material"] --> D["Course Design"]
+    D --> I["Instructor-Led Courseware"]
+    D --> P["Self-Paced GitHub Pages Course"]
+    I --> L1["Labs · Slides · Instructor Guides · Assessments"]
+    P --> L2["Markdown Lessons · Quizzes · Diagrams · Downloadable Exercises"]
+    L1 --> Q["QA Review"]
+    L2 --> Q
+    Q --> R["Release Package"]
+```
+
+---
+
+## 📁 Repository Structure
 
 ```text
-cloud-security-envisioning-strategy/
+.
 ├── README.md
-├── index.html
-├── course-overview.md
-├── modules/
-│   ├── 00-orientation.md
-│   ├── 01-strategy-governance.md
-│   ├── 02-microsoft-security-architecture.md
-│   ├── 03-cloud-security-posture-management.md
-│   ├── 04-defender-cloud-configuration.md
-│   ├── 05-workload-protection-decision-matrix.md
-│   ├── 06-defender-for-storage.md
-│   ├── 07-defender-for-containers.md
-│   ├── 08-defender-for-app-service.md
-│   ├── 09-defender-for-ai-services.md
-│   ├── 10-hands-on-scenarios.md
-│   └── 11-capstone-roadmap.md
+├── CESE323ANN.txt
+├── CESE323PKG.txt
+├── course/
+│   ├── overview.md
+│   ├── agenda.md
+│   ├── table-of-contents.md
+│   ├── course-guide.md
+│   └── feedback/
+├── instructor/
+│   ├── instructor-course-guide.md
+│   ├── instructor-prep-guide.md
+│   ├── instructor-agenda-changes.md
+│   ├── instructor-errata.md
+│   ├── instructor-lab-setup-guide.md
+│   ├── instructor-lab-exercises-guide.md
+│   └── instructor-lab-exercises-guide-with-hints.md
+├── student/
+│   ├── student-course-guide.md
+│   ├── student-table-of-contents.md
+│   ├── student-lab-exercises-guide.md
+│   ├── student-lab-exercises-guide-with-hints.md
+│   └── student-knowledge-assessment.md
 ├── labs/
-│   ├── lab-01-security-priority-map.md
-│   ├── lab-02-posture-review-checklist.md
-│   ├── lab-03-workload-protection-selection.md
-│   ├── lab-04-ai-security-risk-review.md
-│   └── lab-05-remediation-roadmap.md
+│   ├── lab-00-environment-readiness/
+│   ├── lab-01-defender-for-cloud-baseline/
+│   ├── lab-02-cspm-secure-score-recommendations/
+│   ├── lab-03-workload-protection-selection/
+│   ├── lab-04-ai-workload-protection/
+│   ├── lab-05-entra-identity-hardening/
+│   └── lab-files/
+├── slides/
+│   ├── instructor-slide-show.pptx
+│   └── exports/
+├── site/
+│   ├── index.html
+│   ├── modules/
+│   ├── assets/
+│   └── styles/
 ├── assessments/
-│   ├── knowledge-checks.md
-│   ├── scenario-questions.md
-│   └── capstone-rubric.md
-├── templates/
-│   ├── cloud-security-goals-worksheet.md
-│   ├── workload-protection-matrix.md
-│   ├── remediation-plan-template.md
-│   └── 30-day-roadmap-template.md
-├── assets/
-│   ├── images/
-│   ├── css/
-│   └── js/
-└── docs/
-    └── references.md
+│   ├── quizzes/
+│   ├── knowledge-checks/
+│   ├── rubrics/
+│   └── answer-keys/
+├── docs/
+│   ├── source-alignment.md
+│   ├── references.md
+│   └── qa-checklist.md
+└── .github/
+    └── workflows/
+        └── pages.yml
+```
+
+---
+
+## 🧾 Courseware Production Checklist
+
+Use this checklist to track CESE323 ERC1.0 courseware build progress.
+
+| Status | Asset | Owner | Notes |
+|---|---|---|---|
+| ⬜ | `CESE323ANN.txt` | Course owner | Announcement / course listing copy |
+| ⬜ | `CESE323PKG.txt` | Course owner | Packaging metadata and release notes |
+| ⬜ | Quick Course Overview with Full Table of Contents | Instructional designer | One-page overview + full TOC |
+| ⬜ | Instructor Errata | QA lead | Known issues, delivery notes, corrections |
+| ⬜ | Instructor Slide Show | Facilitator | Main ILT slide deck |
+| ⬜ | Instructor Agenda Changes | Facilitator | One-day compression notes |
+| ⬜ | Instructor Course Guide | Facilitator | Full delivery guide |
+| ⬜ | Instructor Lab Exercises Guide with Hints | Lab author | Instructor-only support version |
+| ⬜ | Instructor Lab Exercises Guide | Lab author | Standard instructor lab guide |
+| ⬜ | Instructor Prep Guide | Facilitator | Setup, permissions, timing, demos |
+| ⬜ | Instructor Lab Setup Guide | Lab author | Tenant/subscription setup |
+| ⬜ | Lab Exercise Files | Lab author | Scripts, templates, screenshots, datasets |
+| ⬜ | Student Lab Exercises Guide with Hints | Instructional designer | Optional guided learner copy |
+| ⬜ | Student Lab Exercises Guide | Instructional designer | Main learner lab workbook |
+| ⬜ | Student Course Guide | Instructional designer | Learner manual |
+| ⬜ | Student Table of Contents | Instructional designer | Navigation and module map |
+| ⬜ | Student Knowledge Assessment | Assessment author | Quiz + scenario questions |
+| ⬜ | Course Feedback Forms | Course owner | Feedback, evaluation, improvement loop |
+
+---
+
+## 🧪 Labs & Practical Scenarios
+
+| Lab | Scenario | Core Tooling | Evidence Required |
+|---:|---|---|---|
+| **Lab 00** | Environment readiness and access verification | Azure portal, Defender portal, Entra admin center | Screenshot of access, tenant/subscription details, role validation |
+| **Lab 01** | Enable / review Microsoft Defender for Cloud baseline | Defender for Cloud | Secure score baseline, recommendations export |
+| **Lab 02** | CSPM review and exposure prioritization | Defender CSPM, recommendations, compliance dashboard | Top 5 risks, impacted assets, priority remediation plan |
+| **Lab 03** | Workload protection selection | Defender plans | Selected plan rationale and configuration screenshots |
+| **Lab 04** | AI workload protection and guardrail review | Defender for Cloud, Microsoft Foundry, Microsoft Entra | AI risk controls, identity boundary notes, dashboard evidence |
+| **Lab 05** | Identity hardening for cloud workloads | Microsoft Entra, RBAC, Conditional Access, managed identities | Over-privilege finding, recommended RBAC/CA changes |
+| **Lab 06** | Live environment review and operational briefing | Defender portal, Azure portal, Microsoft Learn references | Final findings register and remediation backlog |
+
+---
+
+## 🧠 Assessment Strategy
+
+Assessment should prove practical competence rather than passive reading completion.
+
+| Assessment Type | Weight | Description |
+|---|---:|---|
+| Knowledge Checks | 20% | Short MCQs mapped to each module. |
+| Lab Evidence | 35% | Screenshots, findings, configuration notes, and remediation observations. |
+| Scenario Response | 25% | Learner explains what risk exists, why it matters, and how to remediate. |
+| Final Operational Brief | 20% | Learner presents a prioritized Defender for Cloud improvement plan. |
+
+### Suggested Competency Levels
+
+| Level | Evidence |
+|---|---|
+| **Aware** | Can explain concepts and identify relevant Microsoft security services. |
+| **Practitioner** | Can navigate portals, interpret recommendations, and complete guided remediation tasks. |
+| **Operator** | Can prioritize findings, justify risk treatment, and create operational next steps. |
+| **Architect** | Can align strategy, governance, workload protection, identity, compliance, and AI controls. |
+
+---
+
+## 🧑‍🏫 Facilitator Guidance
+
+### Recommended Facilitation Pattern
+
+1. **Start with business drivers**, not product menus.
+2. **Map controls to risk**, not features to slides.
+3. **Use the Defender portal early** to make posture visible.
+4. **Limit live workload modules to two** in the one-day format.
+5. **Use AI security as a high-impact scenario**, especially where Microsoft Foundry, Azure AI, or Copilot-style workloads are in scope.
+6. **End with an operational backlog** that the customer can act on after the workshop.
+
+### Instructor Notes
+
+> [!TIP]
+> Use the morning to establish strategic alignment and the afternoon to produce evidence, configuration observations, and remediation actions.
+
+> [!IMPORTANT]
+> For live customer environments, confirm authorization, RBAC permissions, subscription scope, and change-control boundaries before enabling or modifying Defender plans.
+
+> [!WARNING]
+> Do not perform destructive remediation during the workshop unless explicit approval and rollback steps are documented.
+
+---
+
+## 🧰 Learner Prerequisites
+
+Recommended learner familiarity:
+
+- Basic Azure subscription, resource group, networking, and identity concepts.
+- Microsoft Entra ID basics, including users, groups, roles, authentication, and Conditional Access.
+- Basic understanding of Microsoft Defender for Cloud and Microsoft Defender XDR.
+- Familiarity with security concepts such as Zero Trust, shared responsibility, encryption, compliance, and risk management.
+- For AI modules: basic understanding of Azure AI Services, Microsoft Foundry, model deployments, prompt flow, and data leakage risks.
+- For hands-on labs: Reader, Security Reader, Contributor, Owner, or appropriately scoped lab roles depending on the task.
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/<your-org>/<your-repo>.git
+cd <your-repo>
+```
+
+### 2. Review the Course Overview
+
+```bash
+code README.md
+code course/overview.md
+code course/agenda.md
+```
+
+### 3. Build the GitHub Pages Version
+
+Suggested static site options:
+
+- Plain HTML + Markdown
+- GitHub Pages with Jekyll
+- MkDocs Material
+- Docusaurus
+- Next.js static export
+
+Example MkDocs workflow:
+
+```bash
+pip install mkdocs-material
+mkdocs serve
+```
+
+### 4. Prepare Lab Environment
+
+```text
+Required:
+- Azure subscription
+- Microsoft Defender for Cloud access
+- Microsoft Entra access
+- Defender portal access
+- Optional Microsoft Foundry / Azure AI access
+```
+
+### 5. Publish
+
+```bash
+git add .
+git commit -m "Initialize CESE323 cloud security courseware"
+git push origin main
+```
+
+---
+
+## 🧭 Suggested GitHub Pages Navigation
+
+| Page | Purpose |
+|---|---|
+| `/` | Course landing page |
+| `/overview/` | Course overview and learner outcomes |
+| `/agenda/` | One-day ILT agenda |
+| `/modules/` | Self-paced module index |
+| `/labs/` | Lab exercise library |
+| `/assessments/` | Knowledge checks and assessment guidance |
+| `/instructor/` | Instructor-only guidance if access controlled |
+| `/references/` | Microsoft Learn and documentation references |
+
+---
+
+## 🤝 Contributing
+
+Contributions should improve clarity, technical accuracy, learner experience, or lab reliability.
+
+### Contribution Guidelines
+
+- Keep Microsoft Learn links canonical and current.
+- Do not copy Microsoft Learn content directly; summarize and link instead.
+- Use screenshots only when licensing and privacy rules allow it.
+- Keep lab instructions reproducible and role-scoped.
+- Add evidence requirements for each practical task.
+- Validate all commands, portal paths, and screenshots before release.
+- Record all changes in `docs/qa-checklist.md` or release notes.
+
+### Pull Request Checklist
+
+- [ ] Content aligns with the course objectives.
+- [ ] Microsoft Learn references are linked and current.
+- [ ] Lab instructions include prerequisites and expected outputs.
+- [ ] Screenshots do not expose tenant secrets, IDs, or customer data.
+- [ ] Assessment questions have answer keys and rationales.
+- [ ] Markdown renders correctly in GitHub.
+- [ ] Mermaid diagrams render correctly.
+- [ ] Accessibility and readability have been reviewed.
+
+---
+
+## 📚 Source References
+
+### Project Sources
+
+- [Microsoft Learn Collection: Cloud Security Envisioning & Strategy Workshop](https://learn.microsoft.com/en-us/collections/qrx3iqtkpwee6g?source=docs&sharingId=6319874F856A7FF8)
+- `Cloud Security Envisioning & Strategy Workshop Syllabus AZ.docx`
+- Course source PDFs and Microsoft Learn captures stored in this repository’s source package.
+
+### Microsoft Documentation & Training
+
+- [Microsoft Defender for Cloud documentation](https://learn.microsoft.com/en-us/azure/defender-for-cloud/)
+- [Cloud Security Posture Management in Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-cloud-security-posture-management)
+- [Review workload protection in Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/workload-protections-dashboard)
+- [Secure score in Microsoft Defender for Cloud](https://learn.microsoft.com/en-us/azure/defender-for-cloud/secure-score-security-controls)
+- [Course SC-900T00-A: Introduction to Microsoft Security, Compliance, and Identity](https://learn.microsoft.com/en-us/training/courses/sc-900t00)
+- [Course SC-5009-A: Secure AI solutions in the cloud using Microsoft Defender for Cloud and Microsoft Entra](https://learn.microsoft.com/en-us/training/courses/sc-5009)
+- [Design solutions that align with security best practices and priorities](https://learn.microsoft.com/en-us/training/paths/sc-100-design-solutions-best-practices-priorities/)
+- [Secure AI in the Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/ai/secure)
+
+---
+
+## 🛡 Security & Privacy Notes
+
+- Do not commit real tenant IDs, subscription IDs, customer screenshots, secrets, keys, access tokens, or exported findings containing sensitive information.
+- Use redacted screenshots for training assets.
+- Store lab templates separately from real customer evidence.
+- Use least privilege access for labs and demos.
+- Validate AI workload examples for data leakage, prompt injection, unsafe outputs, and identity misconfiguration risks.
+
+---
+
+## 🧾 License
+
+License to be confirmed by the course owner.
+
+Recommended options:
+
+| License | Suitable When |
+|---|---|
+| **Creative Commons BY-NC-SA** | Courseware may be shared and adapted non-commercially with attribution. |
+| **Creative Commons BY-SA** | Open education sharing is allowed with attribution and share-alike requirements. |
+| **MIT** | Code samples and lab scripts are intended for broad reuse. |
+| **Private / Internal Use Only** | Client-specific workshop materials must not be redistributed. |
+
+---
+
+<div align="center">
+
+**Built for practical cloud security enablement, secure AI adoption, and measurable Microsoft Defender for Cloud operational readiness.**
+
+</div>
