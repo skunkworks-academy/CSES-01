@@ -1,4 +1,4 @@
-﻿# CSES-01 â€” Cloud Security Envisioning & Strategy
+# CSES-01 — Cloud Security Envisioning & Strategy
 
 [![Course Portal](https://img.shields.io/badge/Course%20Portal-GitHub%20Pages-0078D4?logo=githubpages&logoColor=white)](https://skunkworks-academy.github.io/CSES-01/)
 [![Built with Docusaurus](https://img.shields.io/badge/Built%20with-Docusaurus-2E8555?logo=docusaurus&logoColor=white)](https://docusaurus.io/)
@@ -43,24 +43,24 @@ flowchart LR
 
 ```text
 CSES-01/
-â”œâ”€â”€ docs/
-â”‚   â”œâ”€â”€ index.mdx
-â”‚   â”œâ”€â”€ course-overview.mdx
-â”‚   â”œâ”€â”€ implementation-architecture.mdx
-â”‚   â”œâ”€â”€ modules/
-â”‚   â”œâ”€â”€ labs/
-â”‚   â”œâ”€â”€ assessments/
-â”‚   â””â”€â”€ instructor/
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ components/
-â”‚   â””â”€â”€ css/
-â”œâ”€â”€ static/
-â”‚   â””â”€â”€ img/
-â”œâ”€â”€ .github/
-â”‚   â””â”€â”€ workflows/deploy.yml
-â”œâ”€â”€ docusaurus.config.ts
-â”œâ”€â”€ sidebars.ts
-â””â”€â”€ package.json
+├── docs/
+│   ├── index.mdx
+│   ├── course-overview.mdx
+│   ├── implementation-architecture.mdx
+│   ├── modules/
+│   ├── labs/
+│   ├── assessments/
+│   └── instructor/
+├── src/
+│   ├── components/
+│   └── css/
+├── static/
+│   └── img/
+├── .github/
+│   └── workflows/deploy.yml
+├── docusaurus.config.ts
+├── sidebars.ts
+└── package.json
 ```
 
 ---
@@ -99,7 +99,7 @@ Deployment is configured through GitHub Actions in:
 After the first successful deployment, enable GitHub Pages in the repository settings:
 
 ```text
-Settings â†’ Pages â†’ Source â†’ GitHub Actions
+Settings → Pages → Source → GitHub Actions
 ```
 
 ---
@@ -122,7 +122,7 @@ Settings â†’ Pages â†’ Source â†’ GitHub Actions
 
 Primary Microsoft Learn collection:
 
-- [Cloud Security Envisioning & Strategy Workshop Syllabus â€” Microsoft Learn Collection](https://learn.microsoft.com/en-us/collections/qrx3iqtkpwee6g?source=docs&sharingId=6319874F856A7FF8)
+- [Cloud Security Envisioning & Strategy Workshop Syllabus — Microsoft Learn Collection](https://learn.microsoft.com/en-us/collections/qrx3iqtkpwee6g?source=docs&sharingId=6319874F856A7FF8)
 
 Supporting topic areas:
 
