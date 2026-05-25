@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0b1220"/>
+  <circle cx="1020" cy="110" r="220" fill="#0078d4" opacity=".25"/>
+  <circle cx="160" cy="560" r="250" fill="#50e6ff" opacity=".14"/>
+  <text x="80" y="150" fill="#50e6ff" font-family="Segoe UI, Arial" font-size="34" font-weight="700">Skunkworks Academy</text>
+  <text x="80" y="255" fill="#ffffff" font-family="Segoe UI, Arial" font-size="76" font-weight="800">CSES-01</text>
+  <text x="80" y="335" fill="#ffffff" font-family="Segoe UI, Arial" font-size="44">Cloud Security Envisioning &amp; Strategy</text>
+  <text x="80" y="430" fill="#cbd5e1" font-family="Segoe UI, Arial" font-size="28">Microsoft Defender for Cloud • CSPM • Workload Protection • AI Security • Entra</text>
+  <rect x="80" y="490" width="335" height="54" rx="27" fill="#0078d4"/>
+  <text x="108" y="526" fill="#ffffff" font-family="Segoe UI, Arial" font-size="24" font-weight="700">Self-paced course portal</text>
+</svg>

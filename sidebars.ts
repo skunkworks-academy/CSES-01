@@ -1,26 +1,29 @@
-import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
+﻿import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
 const sidebars: SidebarsConfig = {
   courseSidebar: [
     'index',
     'course-overview',
+    'learner-path',
     'implementation-architecture',
+
     {
       type: 'category',
-      label: 'Core Modules',
+      label: 'Course Modules',
       collapsed: false,
       items: [
-        'modules/01-strategic-initiation-governance',
-        'modules/02-defender-cloud-posture',
-        'modules/03-workload-protection',
-        'modules/04-ai-security-identity',
-        'modules/05-remediation-operations',
-        'modules/06-live-environment-review',
+        'modules/strategic-initiation-governance',
+        'modules/defender-cloud-posture',
+        'modules/workload-protection',
+        'modules/ai-security-identity',
+        'modules/remediation-operations',
+        'modules/live-environment-review',
       ],
     },
+
     {
       type: 'category',
-      label: 'Labs',
+      label: 'Hands-on Labs',
       collapsed: false,
       items: [
         'labs/lab-01-defender-for-cloud-onboarding',
@@ -29,6 +32,7 @@ const sidebars: SidebarsConfig = {
         'labs/lab-04-ai-security-controls',
       ],
     },
+
     {
       type: 'category',
       label: 'Assessments',
@@ -38,16 +42,17 @@ const sidebars: SidebarsConfig = {
         'assessments/capstone-scenario',
       ],
     },
+
     {
       type: 'category',
       label: 'Instructor Resources',
-      collapsed: true,
+      collapsed: false,
       items: [
-        'instructor/prep-guide',
         'instructor/agenda',
+        'instructor/prep-guide',
       ],
     },
-    'learner-path',
+
     'references',
   ],
 };
