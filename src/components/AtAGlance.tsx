@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 
 type Item = {
   label: string;
@@ -17,3 +17,4 @@ export default function AtAGlance({items}: {items: Item[]}) {
     </div>
   );
 }
+

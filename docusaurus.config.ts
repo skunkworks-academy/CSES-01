@@ -1,4 +1,4 @@
-import type {Config} from '@docusaurus/types';
+﻿import type {Config} from '@docusaurus/types';
 import type {Options as PresetOptions, ThemeConfig} from '@docusaurus/preset-classic';
 
 const config: Config = {
@@ -99,7 +99,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Skunkworks Academy. Built with Docusaurus.`,
+      copyright: `Copyright Â© ${new Date().getFullYear()} Skunkworks Academy. Built with Docusaurus.`,
     },
     prism: {
       additionalLanguages: ['powershell', 'bash', 'json', 'yaml'],
@@ -117,3 +117,4 @@ const config: Config = {
 };
 
 export default config;
+

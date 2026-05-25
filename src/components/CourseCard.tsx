@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Link from '@docusaurus/Link';
 
 type Props = {
@@ -14,7 +14,7 @@ export default function CourseCard({title, duration, level, description, to}: Pr
     <div className="course-card">
       <h3>{title}</h3>
       <div className="course-card__meta">
-        {[level, duration].filter(Boolean).join(' • ')}
+        {[level, duration].filter(Boolean).join(' â€¢ ')}
       </div>
       <p>{description}</p>
       <Link className="button button--primary button--sm" to={to}>
@@ -23,3 +23,4 @@ export default function CourseCard({title, duration, level, description, to}: Pr
     </div>
   );
 }
+
