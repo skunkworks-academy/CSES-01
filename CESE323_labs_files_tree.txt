@@ -1,0 +1,72 @@
+CESE323_labs_files_pack
+└── labs
+    └── files
+        ├── diagrams
+        │   ├── ai-security-risk-flow.mmd
+        │   ├── ai-security-risk-flow.svg
+        │   ├── attack-path-remediation-flow.mmd
+        │   ├── attack-path-remediation-flow.svg
+        │   ├── cspm-posture-review-flow.mmd
+        │   ├── cspm-posture-review-flow.svg
+        │   ├── defender-cloud-lab-flow.mmd
+        │   ├── defender-cloud-lab-flow.svg
+        │   ├── README.md
+        │   └── workload-protection-selection-map.mmd
+        ├── instructor-only
+        │   ├── cost-safety-briefing.md
+        │   ├── LAB01-solution-key.md
+        │   ├── LAB02-solution-key.md
+        │   ├── LAB03-solution-key.md
+        │   ├── LAB04-solution-key.md
+        │   ├── LAB05-solution-key.md
+        │   ├── LAB06-solution-key.md
+        │   ├── live-environment-change-control-template.md
+        │   └── README-INSTRUCTOR-ONLY.md
+        ├── remediation-examples
+        │   ├── 30-day-roadmap-example.md
+        │   ├── rem-001-enable-defender-plan.md
+        │   ├── rem-002-reduce-rbac-privilege.md
+        │   ├── rem-003-secure-storage.md
+        │   ├── rem-004-enable-defender-for-ai-services.md
+        │   └── rem-005-attack-path-prioritization.md
+        ├── sample-data
+        │   ├── sample-finding-register.csv
+        │   └── sample-risk-priority-map.json
+        ├── sample-findings
+        │   ├── fnd-001-overprivileged-owner.md
+        │   ├── fnd-002-public-storage-exposure.md
+        │   ├── fnd-003-defender-plan-not-enabled.md
+        │   ├── fnd-004-ai-workload-no-guardrails.md
+        │   └── fnd-005-attack-path-exposed-vm.md
+        ├── screenshots
+        │   ├── lab02_defender-cloud_recommendations_placeholder.md
+        │   ├── lab02_defender-cloud_secure-score_placeholder.md
+        │   ├── lab03_defender-cloud_environment-settings_placeholder.md
+        │   ├── lab04_defender-cloud_ai-services-plan_placeholder.md
+        │   ├── lab05_defender-cloud_attack-path_placeholder.md
+        │   └── README.md
+        ├── scripts
+        │   ├── screenshot_checklist_generator.py
+        │   ├── validate_lab_manifest.py
+        │   └── validate_links.ps1
+        ├── templates
+        │   ├── 01-security-priority-map-template.md
+        │   ├── 02-cloud-security-posture-review-checklist.md
+        │   ├── 03-workload-protection-selection-matrix.csv
+        │   ├── 03-workload-protection-selection-matrix.md
+        │   ├── 04-ai-security-risk-review-template.md
+        │   ├── 05-attack-path-remediation-planning-template.md
+        │   ├── 06-30-day-remediation-roadmap-template.md
+        │   ├── change-control-template.md
+        │   ├── executive-summary-template.md
+        │   ├── finding-register-template.csv
+        │   └── remediation-plan-template.csv
+        ├── validation
+        │   ├── internal-link-validation-report.md
+        │   ├── lab-step-validation-register.csv
+        │   ├── portal-version-log.md
+        │   ├── release-validation-checklist.md
+        │   └── screenshot-validation-register.csv
+        ├── lab-link-index.md
+        ├── manifest.json
+        └── README.md
