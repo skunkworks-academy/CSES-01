@@ -4,7 +4,7 @@ import type {Options as PresetOptions, ThemeConfig} from '@docusaurus/preset-cla
 const config: Config = {
   title: 'CSES-01',
   tagline: 'Cloud Security Envisioning & Strategy',
-  favicon: 'img/favicon.svg',
+  favicon: 'images/favicon-search.png',
 
   url: 'https://skunkworks-academy.github.io',
   baseUrl: '/CSES-01/',
